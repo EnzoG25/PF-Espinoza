@@ -1,0 +1,160 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #111;
+  color: white;
+}
+
+nav {
+  background-color: blanchedalmond;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 80px;
+  position: sticky;
+  top: 0;
+  z-index:3;
+  border-bottom: 1px solid #191919;
+}
+
+.nav-list {
+  list-style: none;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.nav-link {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  text-decoration: none;
+  color: #111;
+  font-size: 20px;
+  font-weight: semibold;
+}
+
+.nav-link img {
+  width: 30px;
+}
+
+
+/* 
+  en row:
+  justify-content = acomoda en el eje X (horizontal/fila/ancho)
+  align-items  = acomoda en el eje Y (vertical/columna/alto)
+
+  en column:
+  justify-content = acomoda en el eje Y (vertical/columna/alto)
+  align-items = acomoda en el eje X (horizontal/fila/ancho)
+   */
+
+.container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin: 10px;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+
+}
+
+.card-container {
+  padding: 10px;
+  background-color: #191919;
+  border: 1px solid white;
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.card-container img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+}
+
+
+.card-footer {
+  display: flex;
+  justify-content: space-between;
+}
+
+.card-footer a {
+  text-decoration: none;
+  background-color: blanchedalmond;
+  color: #111;
+  padding: 10px;
+  width: 49%;
+  text-align: center;
+}
+
+
+/* hero */
+.hero-container {
+  margin-top: 20px;
+}
+
+.hero-card {
+  display: flex;
+  margin: 20px 0;
+}
+
+.hero-card-header {
+  position: relative;
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-card-header img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.hero-card-content {
+  background-color: blanchedalmond;
+  color: #111;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  justify-content: space-between;
+  width: 50%;
+}
+
+.hero-card-content h2 {
+  font-size: 24px;
+}
+
+.hero-card-content p {
+  text-align: justify;
+  font: 20px;
+}
+
+
+.hero-number {
+  background-color: #111;
+  opacity: 0.5;
+  font-size: 300px;
+  font-weight: bold;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
