@@ -1,0 +1,48 @@
+.container-fluid {
+    background: linear-gradient(to right, $maincolor, black) ;
+    height: 65px;
+    font-family: "almendra";
+    box-shadow: 1px rgb(155, 134, 134);
+  
+    
+}
+
+.nav-1 {
+    display:flex;
+    align-content: space-between;
+    justify-content: center;
+
+
+
+& img {
+    height: 55px;
+    object-fit: cover;
+    transform: skew(5deg,5deg);
+  }
+& button {
+  background-color: rgb(116, 104, 104);
+}
+}
+
+
+  
+  .nav h6 {
+    color: white;
+    font-family: "almendra";
+    
+  }
+  .offcanvas-title {
+    font-size: 35px;
+  }
+  
+  .nav-item a {
+    color:white;
+    font-size: 25px;
+  }
+  .navbar-toggler:hover {
+    background-color: #f46472 ;
+  }
+
+  ::selection {
+    color: blue;
+  }

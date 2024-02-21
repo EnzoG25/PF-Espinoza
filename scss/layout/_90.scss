@@ -1,0 +1,277 @@
+.grid {
+    display:grid;
+    grid-template-columns: repeat(4, 300px);
+    grid-template-rows: repeat(3, 300px);
+    gap: 20px;
+    padding: 20px 20px;
+    background: radial-gradient( circle, rgb(82, 81, 94), $maincolor, black );
+    border-top: $border;
+    justify-content: center;
+    align-items: center;
+    grid-template-areas: 
+    'a1 a1 a3 a3'
+    'a2 a2 a3 a3'
+    'a4 a4 a4 a4'; 
+
+}
+.box {
+    width: 100%;
+    height: 100%;
+    border: 1px solid rgb(0, 0, 0) ;
+
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: center;
+    position:relative;
+    gap: 20px;
+& h3 {
+    color: black;
+    padding-top: 10px;
+    font-family: "Almendra";
+    font-size: 25px;
+    background: linear-gradient(rgb(241, 237, 237), $maincolor, black );
+    background-position: 50% 100%;
+    background-repeat: no-repeat;
+    background-size: 0% 40%;
+    transition: background-size 0.5s;
+&:hover {
+    background-size: 100% 50%;
+}
+}
+
+& p {
+
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: black;
+    text-align: justiify;
+    
+
+}
+& img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+
+}
+}
+
+
+.b1 {
+    background: radial-gradient(circle, grey, $maincolor) ;
+    color: black;
+    grid-area: a1; 
+    box-shadow: $shadow;
+}
+
+.b2 {
+    background-color: black;
+    color: rgb(0, 0, 0);
+    grid-area: a2; 
+    box-shadow: $shadow;
+}
+
+
+.b3 {
+    background: radial-gradient(circle, grey, $maincolor) ;
+    color: black;
+    grid-area: a3; 
+    box-shadow: $shadow;
+}
+
+.b4 {
+    background: radial-gradient(circle, grey, $maincolor) ;
+    color: rgb(3, 2, 2);
+    grid-area: a4;
+    box-shadow: $shadow;
+
+}
+
+.grid-2 {
+    display:grid;
+    grid-template-columns: repeat(4, 300px);
+    grid-template-rows: repeat(3, 300px);
+    background: radial-gradient( circle, rgb(82, 81, 94), $maincolor, black );
+    border-top: $border;
+    padding: 20px;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    grid-template-areas: 
+    'b1 b1 b1 b1'
+    'b3 none b4 b4'
+    'b2 b2 b4 b4';
+}
+
+.box-1 {
+    width: 100%;
+    height: 100%;
+    border: 1px solid rgb(0, 0, 0) ;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: center;
+    position:relative;
+    gap: 20px;
+
+& h3 {
+    font-family: "Almendra";
+    font-size: 25px;
+    background: linear-gradient(rgb(241, 237, 237), $maincolor, black );
+    background-position: 50% 100%;
+    background-repeat: no-repeat;
+    background-size: 0% 40%;
+    transition: background-size 0.5s;
+&:hover {
+    background-size: 100% 50%;
+}
+}
+
+& p {
+
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: black;
+    text-align: justify;
+    padding: $padding;
+    
+}
+& img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    
+}
+}
+
+.a1 {
+    background: radial-gradient(circle, grey, $maincolor) ;
+    box-shadow: $shadow;
+    color: black;
+    grid-area: b1; 
+}
+
+.a2 {
+    background: radial-gradient(circle, grey, $maincolor) ;
+    box-shadow: $shadow;
+    color: black;
+    grid-area: b2; 
+}
+
+.a3 {
+    background-color: black ;
+    box-shadow: $shadow;
+    color: black;
+    border-radius: 50%;
+    grid-area: b3; 
+& img {
+    border-radius: 50%;
+    transform: skew(6deg,6deg);
+}
+}
+
+.a4 {
+    background: radial-gradient(circle, grey, $maincolor) ;
+    box-shadow: $shadow;
+    color: black;
+    grid-area: b4; 
+}
+
+.grid-3 {
+    display:grid;
+    grid-template-columns: repeat(4, 300px);
+    grid-template-rows: repeat(3, 300px);
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background: radial-gradient( circle, rgb(82, 81, 94), $maincolor, black );
+    border-top: $border;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    grid-template-areas: 
+    'c2 c2 c3 c3'
+    'c2 c2 c3 c3'
+    'c1 c1 none c4';
+}
+
+.box-2 {
+    width: 100%;
+    height: 100%;
+    border: 1px solid rgb(0, 0, 0) ;
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: center;
+    position:relative;
+    gap: 20px;
+
+& h3 {
+    color: black;
+    font-family: "Almendra";
+    font-size: 25px;
+    background: linear-gradient(rgb(241, 237, 237), $maincolor, black );
+    background-position: 50% 100%;
+    background-repeat: no-repeat;
+    background-size: 0% 40%;
+    transition: background-size 0.5s;
+&:hover {
+    background-size: 100% 50%;
+}
+}    
+& p {
+
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: black;
+    text-align: justify;
+    padding: $padding;
+    
+}
+& img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+
+}
+}
+
+.c1 {
+    background: radial-gradient(circle, grey, $maincolor) ;
+    box-shadow: $shadow;
+    color: black;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center ;
+    gap: 20px;
+    grid-area: c1; 
+
+}
+
+.c2 {
+    background: radial-gradient(circle, grey, $maincolor) ;
+    box-shadow: $shadow;
+    color: black;
+    grid-area: c2; 
+}
+
+
+.c3 {
+    background: radial-gradient(circle, grey, $maincolor) ;
+    box-shadow: $shadow;
+    color: rgb(0, 0, 0);
+    grid-area: c3; 
+}
+
+.c4 {
+    background-color: black ;
+    box-shadow: $shadow;
+    color: rgb(8, 6, 6);
+    border-radius: 50%;
+    grid-area: c4; 
+& img {
+    border-radius: 50%;
+    transform:skewY(6deg)
+}
+}
+

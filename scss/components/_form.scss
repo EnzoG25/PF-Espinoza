@@ -1,0 +1,20 @@
+.float {
+
+    border-top: $border;
+    padding: $padding;
+    background: linear-gradient(to right, $maincolor, black) ;
+}
+
+.form-control  {
+    background-color: #000000;
+    color:#000000
+
+    
+}
+.col-auto {
+    text-align: center;
+}
+
+label {
+    text-align: center;
+}

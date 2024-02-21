@@ -1,0 +1,24 @@
+.button {
+    display: flex;
+    justify-content: right;
+    align-content: center;
+    background: linear-gradient(to right, $maincolor, black) ;
+    padding-top: 40px;
+}
+
+
+.btn {
+    background-color: #070406;
+    border-color: rgb(0, 0, 0);
+    text-align: center;
+
+}
+a {
+    color: rgb(255, 4, 4);
+    text-decoration: none;
+}
+
+button:hover {
+    color: red;
+    
+    }
