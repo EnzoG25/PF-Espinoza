@@ -1,0 +1,131 @@
+.principal-1 {
+
+    background: radial-gradient( circle, rgb(82, 81, 94), $maincolor, black );
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding:$padding;
+    
+    
+    
+    
+& h1 {
+    
+    text-align: center;
+    padding:20px;
+    gap: 20px;
+    font-family:"Almendra";
+    color:#000000f8;
+    font-size: 60px;   
+    background: linear-gradient(rgb(241, 237, 237), $maincolor, black );
+    padding: 10px;
+    background-position: 50% 100%;
+    background-repeat: no-repeat;
+    background-size: 0% 40%;
+    transition: background-size 0.5s;
+&:hover {
+    background-size: 47% 35%;
+}
+    
+    
+}    
+& h2 {
+    padding: 20px;
+    gap: 20px;
+    font-family:"Almendra";
+    color:#000000f8;
+    font-size: 30px;
+    text-align:center;
+}
+& p {
+    padding-top: 20px;
+    font-size: 20px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-align: center;
+    color:#000000f8;
+} 
+& img {
+    border: $border;
+    box-shadow: $shadow;
+}
+}
+
+
+.pri-card  {
+    width: 100;
+    border-top: $border;
+    padding: $padding;
+    background: radial-gradient( circle, rgb(82, 81, 94), $maincolor, black );
+    color: #070101f8;
+    display:flex;
+    align-content: center;
+    justify-content: center;
+    gap:50px;
+}
+
+.pri-card-2 {
+    padding: 20px;
+    background-color:rgb(201, 115, 115) ;
+    border: 2px solid black;
+    width:300px;
+    text-align: center;
+    font-size: 15px;
+    box-shadow: $shadow;
+    
+& p {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 20px;
+    color: black;
+}
+& img {
+    width:200px;
+    height: 350px;
+    object-fit:cover;
+    border: 2px solid black;
+}
+}
+
+.image {
+    display:flex;
+    justify-content: center;
+    align-content: center;
+    border-top: $border;
+    border-color: solid 1px black;
+    padding:$padding;
+    height: 600px;
+    width: 100%;
+    background: radial-gradient( circle, rgb(82, 81, 94), $maincolor, black );
+    
+    
+& img {
+    object-fit: cover;
+    box-shadow: $shadow;
+
+}    
+}
+.pri-map{
+    display: flex;
+    align-content: center;
+    justify-content: space-between;
+    padding: $padding;
+    background: radial-gradient( circle, rgb(82, 81, 94), $maincolor, black );
+    border-top:$border
+    
+
+}
+
+.pri-map-1 {
+    align-self: center;
+    
+}
+
+
+
+
+
+
+
+
+
+

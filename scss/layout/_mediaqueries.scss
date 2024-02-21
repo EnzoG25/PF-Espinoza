@@ -1,0 +1,192 @@
+@media screen and (max-width: 625px) {
+
+    // Esto pertenece al index
+
+    .pri-card {
+    
+        flex-direction: column;
+        align-items: center;
+        
+    & .pri-card-2 {
+    
+        flex-direction: column;
+        width: 80%;
+    & img {
+        width:150px;
+        height: 600px;
+    }
+    }
+    
+    }
+    
+    
+    
+    .principal-1 {
+    
+    & h1 {
+        font-size: 30px;
+    }
+    
+    & img {
+        height: 590px;
+        width: 590px;
+        object-fit: fill;
+    }
+    }
+    .pri-map {
+        flex-direction: column;
+        gap: 10px;
+        height: 900px;
+        flex-wrap: wrap;
+    & pri-map-1 {
+        flex-direction: column;
+    }
+    }
+    .image {
+    
+        height: 650px;
+    
+    & img {
+        height: 580px;
+        width: 580px;
+        object-fit: fill;
+    }
+    }
+    
+    // Esto pertenece a pag 60
+
+    .conteiner {
+        height: 1600px;
+    }
+    
+    .card-conteiner {
+        flex-direction: column;
+        height: 50%;
+    }
+    
+    .sub-titulo {
+        height: 1100px;
+    }
+
+
+    // Esto pertenece a pag 80
+
+
+    .hero-card {
+        flex-direction: column;
+    
+    & img {
+    
+    align-self: center;
+    width: 70%;
+    }
+    }
+
+    // Esto pertenece a pag 90
+
+    .grid {
+
+        grid-template-columns: repeat(1,300px);
+        grid-template-rows: repeat(4, 500px);
+        grid-template-areas: 
+        'a4 a4'
+        'a2 a2'
+        'a1 a1'
+        'a3 a3' ; 
+    
+    .box {
+    
+    & h3 {
+        
+        padding-top: 25px;
+        font-size: 20px;
+    }
+    
+    & p {
+        font-size:15px;
+        text-align: justify;
+        padding: $padding;
+    }
+    }
+    }
+    
+    
+    .grid-2 {
+    
+        grid-template-columns: repeat(1,300px);
+        grid-template-rows: repeat(4, 500px);
+        grid-template-areas: 
+        'b4 b4'
+        'b2 b2'
+        'b1 b1'
+        'b3 b3' ; 
+    }
+    
+    
+    .grid-3 {
+    
+        grid-template-columns: repeat(1,500px);
+        grid-template-rows: repeat(4, 600px);
+        grid-template-areas: 
+        'c3 c3'
+        'c2 c2'
+        'c1 c1'
+        'c4 c4'; 
+    
+    
+    
+    .box-2 {
+    & img {
+        border-radius: 0%;
+    }
+    }
+    }
+
+    // Esto pertenece a la pagina 2000
+
+    .card {
+        height: 3000px;
+    }
+
+    .card-two {
+    flex-direction: column;
+    height: 36%;
+
+    
+    .card-three {
+
+    
+
+    & img {
+    height: 250px;
+    width: 300px;
+    border-radius: 0%;
+    align-self: center;
+    }
+    & h2 {
+    font-size: 25px;
+    text-align: center;
+    }
+    
+    
+    }
+}
+.square {
+    display:grid;
+    grid-template-columns: repeat(2, 300px);
+    grid-template-rows: repeat(2, 300px);
+    grid-template-areas: 
+    'a1 a1'
+    'a2 a3'
+    'a2 a3' 
+    'a4 a4'; 
+
+& .square-box {
+
+& h2 {
+padding-top: 15px;
+}
+}
+}
+    
+    }
