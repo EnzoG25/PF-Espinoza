@@ -223,26 +223,6 @@ button:hover {
   align-self: center;
 }
 
-.test2 {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  height: 300px;
-  width: 100%;
-}
-.test2 h4 {
-  align-self: center;
-  background: linear-gradient(125deg, #ae2f27, black);
-  padding: 10px;
-  background-position: 50% 100%;
-  background-repeat: no-repeat;
-  background-size: 0% 40%;
-  transition: background-size 0.5s;
-}
-.test2 h4:hover {
-  background-size: 100% 40%;
-}
-
 .border {
   border: 1px solid rgb(187, 12, 12);
   background-color: #e4a0a0;
@@ -871,6 +851,184 @@ button:hover {
     grid-template-columns: repeat(2, 300px);
     grid-template-rows: repeat(2, 300px);
     grid-template-areas: "a1 a1" "a2 a3" "a2 a3" "a4 a4";
+  }
+  .square .square-box h2 {
+    padding-top: 15px;
+  }
+}
+@media screen and (max-width: 400px) {
+  .nav-1 h6 {
+    color: #ffebcd;
+  }
+  .pri-card {
+    flex-direction: column;
+    align-items: center;
+  }
+  .pri-card .pri-card-2 {
+    flex-direction: column;
+    width: 95%;
+  }
+  .pri-card .pri-card-2 img {
+    width: 150px;
+    height: 600px;
+  }
+  .principal-1 h1 {
+    font-size: 25px;
+    color: #ff0000;
+  }
+  .principal-1 p {
+    color: blanchedalmond;
+  }
+  .principal-1 img {
+    height: 360px;
+    width: 360px;
+    object-fit: fill;
+  }
+  .pri-map {
+    flex-direction: column;
+    gap: 10px;
+    height: 800px;
+    flex-wrap: wrap;
+  }
+  .pri-map .pri-map-1 {
+    flex-direction: column;
+  }
+  .image {
+    height: 440px;
+  }
+  .image img {
+    height: 360px;
+    width: 360px;
+    object-fit: fill;
+  }
+  .float label {
+    font-size: 10px;
+    text-align: center;
+  }
+  .conteiner {
+    height: 2200px;
+  }
+  .card-conteiner {
+    flex-direction: column;
+    height: 50%;
+  }
+  .sub-titulo {
+    height: 1900px;
+  }
+  .title h2 {
+    color: #ffebcd;
+  }
+  .hero-card {
+    flex-direction: column;
+  }
+  .hero-card img {
+    align-self: center;
+    width: 70%;
+  }
+  .hero-card .hero-card-content {
+    color: #ffebcd;
+  }
+  .grid {
+    grid-template-columns: repeat(1, 290px);
+    grid-template-rows: repeat(4, 900px);
+    grid-template-areas: "a4 a4" "a2 a2" "a1 a1" "a3 a3";
+  }
+  .grid .box {
+    width: 330px;
+    height: 400px;
+    align-content: space-evenly;
+    justify-content: center;
+  }
+  .grid .box h3 {
+    padding-top: 25px;
+    font-size: 20px;
+  }
+  .grid .box p {
+    font-size: 15px;
+    text-align: justify;
+    padding: 20px 20px 20px 20px;
+  }
+  .grid .b4 {
+    height: 890px;
+  }
+  .grid .b2 {
+    height: 500px;
+  }
+  .grid .b3 {
+    height: 890px;
+  }
+  .grid .b1 {
+    height: 600px;
+  }
+  .grid-2 {
+    grid-template-columns: repeat(1, 290px);
+    grid-template-rows: repeat(4, 800px);
+    grid-template-areas: "b4 b4" "b2 b2" "b1 b1" "b3 b3";
+  }
+  .grid-2 .box-1 {
+    width: 330px;
+    height: 400px;
+    gap: 0px;
+    justify-content: space-around;
+  }
+  .grid-2 .a1 {
+    height: 800px;
+  }
+  .grid-2 .a4 {
+    height: 800px;
+  }
+  .grid-3 {
+    grid-template-columns: repeat(1, 290px);
+    grid-template-rows: repeat(4, 800px);
+    grid-template-areas: "c3 c3" "c2 c2" "c1 c1" "c4 c4";
+  }
+  .grid-3 .box-2 {
+    width: 330px;
+    height: 400px;
+    gap: 0px;
+    justify-content: space-around;
+  }
+  .grid-3 .box-2 img {
+    border-radius: 0%;
+  }
+  .grid-3 .c3 {
+    height: 800px;
+  }
+  .grid-3 .c2 {
+    height: 800px;
+  }
+  .grid-3 .c4 {
+    height: 500px;
+  }
+  .grid-3 .c1 {
+    height: 600px;
+  }
+  .card {
+    height: 4500px;
+  }
+  .card-two {
+    flex-direction: column;
+    height: 1rem;
+  }
+  .card-two .card-three img {
+    height: 350px;
+    width: 300px;
+    border-radius: 0%;
+    align-self: center;
+  }
+  .card-two .card-three h2 {
+    font-size: 25px;
+    text-align: center;
+  }
+  .card-two .card-three p {
+    font-size: 15px;
+  }
+  .square {
+    display: grid;
+    flex-direction: column;
+    grid-template-columns: repeat(1, 330px);
+    grid-template-rows: repeat(2, 650px);
+    grid-template-areas: "a1 a1" "a2 a2" "a4 a4" "a3 a3";
   }
   .square .square-box h2 {
     padding-top: 15px;
