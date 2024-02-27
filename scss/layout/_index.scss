@@ -1,10 +1,24 @@
+@mixin flex($direction, $justify, $align) {
+    display: flex;
+    flex-direction:$direction;
+    justify-content:$justify;
+    align-content:$align;
+
+}
+
+@mixin flexible($direction, $justify, $align){
+    display:flex;
+    flex-direction: $direction;
+    justify-content: $justify;
+    align-items: $align;
+}
+
+
 .principal-1 {
 
     background: radial-gradient( circle, rgb(82, 81, 94), $maincolor, black );
     display:flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    @include flexible(column, center, center);
     padding:$padding;
     
     
@@ -58,9 +72,8 @@
     padding: $padding;
     background: radial-gradient( circle, rgb(82, 81, 94), $maincolor, black );
     color: #070101f8;
-    display:flex;
-    align-content: center;
-    justify-content: center;
+    @include flex(row, center, center);
+    
     gap:50px;
 }
 
@@ -105,9 +118,11 @@
 }    
 }
 .pri-map{
-    display: flex;
-    align-content: center;
-    justify-content: space-between;
+
+    @include flex(row, space-between, center);
+    // display: flex;
+    // align-content: center;
+    // justify-content: space-between;
     padding: $padding;
     background: radial-gradient( circle, rgb(82, 81, 94), $maincolor, black );
     border-top:$border
@@ -119,8 +134,6 @@
     align-self: center;
     
 }
-
-
 
 
 

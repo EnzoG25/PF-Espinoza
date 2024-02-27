@@ -1,4 +1,352 @@
-@media screen and (max-width: 1115px) {
+@mixin size($height, $width) {
+    height: $height;
+    width: $width;
+}
+
+
+@media screen and (min-width: 400px) and (max-width:780px) {
+
+    // Esto pertenece al index
+
+    .nav-1 {
+    & h6 {
+        color: #ffebcd;
+    }
+    }
+
+    .pri-card {
+    
+        flex-direction: column;
+        align-items: center;
+        
+    & .pri-card-2 {
+    
+        flex-direction: column;
+        width: 95%;
+    & img {
+        width: 100px;
+        height: 600px;
+    }
+    }
+    
+    }
+    
+    
+    
+    .principal-1 {
+    
+    & h1 {
+        font-size: 25px;
+        color: #ff0000;
+    }
+
+    & p {
+        color: blanchedalmond;
+    }
+    
+    & img {
+        height: 360px;
+        width: 360px;
+        object-fit: fill;
+    }
+    }
+    .pri-map {
+        flex-direction: column;
+        gap: 10px;
+        height: 800px;
+        flex-wrap: wrap;
+    .pri-map-1 {
+        flex-direction: column;
+    }
+    }
+    .image {
+    
+        height: 440px;
+    
+    & img {
+        height: 360px;
+        width: 360px;
+        object-fit: fill;
+    }
+    }
+    .float {
+
+    & label {
+        font-size: 10px;
+        text-align: center;
+    }
+    }
+
+
+
+
+
+
+// Esto pertenece a pag 60
+
+    .conteiner {
+        height: 2200px;
+}
+
+    .card-conteiner {
+        flex-direction: column;
+        align-items: center;
+        height: 50%;
+}
+
+    .sub-titulo {
+        height: 1900px;
+}
+
+
+
+
+
+
+
+
+// Esto pertenece a pag 80
+
+    .title {
+    & h2 {
+        color:#ffebcd;
+    }
+    }
+    .hero-card {
+        flex-direction: column;
+
+    & img {
+        align-self: center;
+        width: 70%;
+    }
+
+    .hero-card-content { 
+        color: #ffebcd;
+    
+}
+}
+
+
+
+
+
+
+
+
+
+
+    // Esto pertenece a pag 90
+
+    .grid {
+
+        grid-template-columns: repeat(1,290px);
+        grid-template-rows: repeat(4, 900px);
+        grid-template-areas: 
+        'a4 a4'
+        'a2 a2'
+        'a1 a1'
+        'a3 a3' ; 
+
+.box {
+
+    width: 330px;
+    height: 400px;
+    align-content: space-evenly;
+    justify-content: center;
+    
+    
+
+
+& h3 {
+    
+    padding-top: 25px;
+    font-size: 20px;
+}
+
+& p {
+    font-size:15px;
+    text-align: justify;
+    padding: $padding;
+}
+}
+
+.b4 {
+    
+    height: 890px;
+}
+
+.b2 {
+    height: 500px;
+}
+
+.b3 {
+    height: 890px;
+}
+
+.b1 {
+    height: 600px;
+}
+}
+
+
+.grid-2 {
+
+    grid-template-columns: repeat(1,290px);
+    grid-template-rows: repeat(4, 800px);
+    grid-template-areas: 
+    'b4 b4'
+    'b2 b2'
+    'b1 b1'
+    'b3 b3' ; 
+
+    .box-1 {
+
+        width: 330px;
+        height: 400px;
+        gap: 0px;
+        
+        justify-content: space-around;
+}
+
+.a1 {
+    height: 800px;
+
+}
+
+.a4 {
+    height: 800px;
+}
+}
+
+
+.grid-3 {
+
+    grid-template-columns: repeat(1,290px);
+    grid-template-rows: repeat(4, 800px);
+    grid-template-areas: 
+    'c3 c3'
+    'c2 c2'
+    'c1 c1'
+    'c4 c4'; 
+
+
+
+.box-2 {
+& img {
+    border-radius: 0%;
+}
+    width: 330px;
+    height: 400px;
+    gap: 0px;
+    justify-content: space-around;
+}
+.c3 {
+    height: 800px;
+
+}
+.c2 {
+    height: 800px;
+}
+
+.c4 {
+    height: 500px;
+}
+
+.c1 {
+    height: 600px;
+}
+}
+
+
+
+
+
+
+
+
+
+
+
+// Esto pertenece a la pagina 2000
+
+
+
+
+
+
+
+
+.card {
+    height: 4500px;
+}
+
+.card-two {
+flex-direction: column;
+height: 1rem;
+
+
+.card-three {
+
+
+
+& img {
+height: 350px;
+width: 300px;
+border-radius: 0%;
+align-self: center;
+}
+& h2 {
+font-size: 25px;
+text-align: center;
+}
+
+& p {
+font-size: 15px;
+}
+
+
+}
+}
+.square {
+display:grid;
+flex-direction: column;
+grid-template-columns: repeat(1, 330px);
+grid-template-rows: repeat(2, 650px);
+grid-template-areas: 
+'a1 a1'
+'a2 a2'
+'a4 a4' 
+'a3 a3'; 
+
+& .square-box {
+
+
+
+& h2 {
+padding-top: 15px;
+}
+
+}
+}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (min-width:781px) and (max-width: 1115px) {
 
          // Esto pertenece al index
     
@@ -18,7 +366,7 @@
                 flex-direction: column;
                 width: 95%;
             & img {
-                width: 100px;
+                width: 500px;
                 height: 600px;
             }
             }
@@ -39,9 +387,9 @@
             }
             
             & img {
-                height: 360px;
-                width: 360px;
-                object-fit: fill;
+                height: 500px;
+                width: 500px;
+                object-fit: contain;
             }
             }
             .pri-map {
@@ -80,11 +428,15 @@
 
     .card-conteiner {
         flex-direction: column;
+        align-items: center;
         height: 50%;
+        font-size: 25px;
+    
 }
 
     .sub-titulo {
         height: 1900px;
+        font-size: 22px;
 }
     
     
@@ -102,6 +454,7 @@
             & img {
                 align-self: center;
                 width: 70%;
+                object-fit: contain;
             }
         
             .hero-card-content { 
@@ -112,25 +465,20 @@
     
          // Esto pertenece a pag 90
     
-         .grid {
-
-            grid-template-columns: repeat(1,290px);
-            grid-template-rows: repeat(4, 900px);
-            grid-template-areas: 
-            'a4 a4'
-            'a2 a2'
-            'a1 a1'
-            'a3 a3' ; 
+    .grid {
+        grid-template-columns: repeat(1,290px);
+        grid-template-rows: repeat(4, 900px);
+        grid-template-areas: 
+        'a4 a4'
+        'a2 a2'
+        'a1 a1'
+        'a3 a3' ; 
     
     .box {
-    
         width: 330px;
         height: 400px;
         align-content: space-evenly;
         justify-content: center;
-        
-        
-    
     
     & h3 {
         
@@ -147,19 +495,19 @@
     
     .b4 {
         
-        height: 890px;
+        @include size(700px, 700px);
     }
     
     .b2 {
-        height: 500px;
+        @include size(700px, 700px);
     }
     
     .b3 {
-        height: 890px;
+        @include size(700px, 700px);
     }
     
     .b1 {
-        height: 600px;
+        @include size(700px, 700px);
     }
     }
     
@@ -290,90 +638,93 @@
         
         
         }
+
+        @media screen and (min-width:710px) and (max-width: 1115px) {
+
+            // Esto pertenece al index
+    
+        .nav-1 {
+            & h6 {
+                color: #ffebcd;
+            }
+            }
         
+            .pri-card {
+            
+                flex-direction: column;
+                align-items: center;
+                
+            & .pri-card-2 {
+            
+                flex-direction: column;
+                width: 95%;
+            & img {
+                width: 100px;
+                height: 600px;
+            }
+            }
+            
+            }
+            
+            
+            
+            .principal-1 {
+            
+            & h1 {
+                font-size: 25px;
+                color: #ff0000;
+            }
         
-
-
-
-
-
-
-
-@media screen and (max-width: 400px) {
-
-    // Esto pertenece al index
-
-    .nav-1 {
-    & h6 {
-        color: #ffebcd;
-    }
-    }
-
-    .pri-card {
-    
-        flex-direction: column;
-        align-items: center;
+            & p {
+            color: blanchedalmond;
+            }
+            
+            & img {
+                height: 360px;
+                width: 360px;
+                object-fit: fill;
+            }
+            }
+            .pri-map {
+                flex-direction: column;
+                gap: 10px;
+                height: 800px;
+                flex-wrap: wrap;
+            .pri-map-1 {
+                flex-direction: column;
+            }
+            }
+            .image {
+            
+                height: 440px;
+            
+            & img {
+                height: 360px;
+                width: 360px;
+                object-fit: fill;
+            }
+            }
+            .float {
         
-    & .pri-card-2 {
-    
-        flex-direction: column;
-        width: 95%;
-    & img {
-        width: 100px;
-        height: 600px;
-    }
-    }
-    
-    }
-    
-    
-    
-    .principal-1 {
-    
-    & h1 {
-        font-size: 25px;
-        color: #ff0000;
-    }
+            & label {
+                font-size: 10px;
+                text-align: center;
+            }
+            }
 
-    & p {
-        color: blanchedalmond;
-    }
-    
-    & img {
-        height: 360px;
-        width: 360px;
-        object-fit: fill;
-    }
-    }
-    .pri-map {
-        flex-direction: column;
-        gap: 10px;
-        height: 800px;
-        flex-wrap: wrap;
-    .pri-map-1 {
-        flex-direction: column;
-    }
-    }
-    .image {
-    
-        height: 440px;
-    
-    & img {
-        height: 360px;
-        width: 360px;
-        object-fit: fill;
-    }
-    }
-    .float {
 
-    & label {
-        font-size: 10px;
-        text-align: center;
-    }
-    }
 
-// Esto pertenece a pag 60
 
+
+        
+            // Esto pertenece a pag 60
+    
+
+
+
+
+
+        
     .conteiner {
         height: 2200px;
 }
@@ -386,33 +737,56 @@
     .sub-titulo {
         height: 1900px;
 }
-
-// Esto pertenece a pag 80
-
-    .title {
-    & h2 {
-        color:#ffebcd;
-    }
-    }
-    .hero-card {
-        flex-direction: column;
-
-    & img {
-        align-self: center;
-        width: 70%;
-    }
-
-    .hero-card-content { 
-        color: #ffebcd;
     
-}
-}
 
 
-    // Esto pertenece a pag 90
+
+
+
+
+    
+            // Esto pertenece a pag 80
+    
+    
+
+
+
+
+
+
+        .title {
+            & h2 {
+                color:#ffebcd;
+            }
+            }
+            .hero-card {
+                flex-direction: column;
+        
+            & img {
+                align-self: center;
+                width: 70%;
+            }
+    
+            .hero-card-content { 
+                color: #ffebcd;
+            
+        }
+        }
+    
+
+
+
+
+            // Esto pertenece a pag 90
+    
+
+
+
+
+
+
 
     .grid {
-
         grid-template-columns: repeat(1,290px);
         grid-template-rows: repeat(4, 900px);
         grid-template-areas: 
@@ -420,175 +794,175 @@
         'a2 a2'
         'a1 a1'
         'a3 a3' ; 
-
-.box {
-
-    width: 330px;
-    height: 400px;
-    align-content: space-evenly;
-    justify-content: center;
     
+    .box {
+        width: 330px;
+        height: 400px;
+        align-content: space-evenly;
+        justify-content: center;
     
-
-
-& h3 {
-    
-    padding-top: 25px;
+    & h3 {
+        
+        padding-top: 25px;
     font-size: 20px;
-}
-
-& p {
-    font-size:15px;
-    text-align: justify;
-    padding: $padding;
-}
-}
-
-.b4 {
+    }
     
-    height: 890px;
-}
+    & p {
+        font-size:15px;
+        text-align: justify;
+        padding: $padding;
+    }
+    }
+    
+    .b4 {
+        
+        @include size(700px, 600px);
+    }
+    
+    .b2 {
+        @include size(700px, 600px);
+    }
+    .b3 {
+        @include size(700px, 600px);
+    }
+    
+    .b1 {
+        @include size(700px, 600px);
+    }
+    }
+    
+    
+    .grid-2 {
+    
+        grid-template-columns: repeat(1,290px);
+        grid-template-rows: repeat(4, 800px);
+        grid-template-areas: 
+        'b4 b4'
+        'b2 b2'
+        'b1 b1'
+        'b3 b3' ; 
+    
+        .box-1 {
+    
+            width: 330px;
+            height: 400px;
+            gap: 0px;
+            
+            justify-content: space-around;
+    }
+    
+    .a1 {
+        @include size(700px, 600px);
+    
+    }
 
-.b2 {
-    height: 500px;
-}
+    .a2 {
+        @include size(700px, 600px);
+    }
 
-.b3 {
-    height: 890px;
-}
+    .a3 {
+        @include size(700px, 600px);
+    }
+    
+    .a4 {
+        @include size(700px, 600px);
+    }
+    }
+    
+    
+    .grid-3 {
 
-.b1 {
-    height: 600px;
-}
-}
+        grid-template-columns: repeat(1,290px);
+        grid-template-rows: repeat(4, 800px);
+        grid-template-areas: 
+        'c3 c3'
+        'c2 c2'
+        'c1 c1'
+        'c4 c4'; 
 
-
-.grid-2 {
-
-    grid-template-columns: repeat(1,290px);
-    grid-template-rows: repeat(4, 800px);
-    grid-template-areas: 
-    'b4 b4'
-    'b2 b2'
-    'b1 b1'
-    'b3 b3' ; 
-
-    .box-1 {
-
+    .box-2 {
+    & img {
+        border-radius: 0%;
+    }
         width: 330px;
         height: 400px;
         gap: 0px;
-        
         justify-content: space-around;
-}
+    }
+    .c3 {
+        @include size(700px, 600px);
+    
+    }
+    .c2 {
+        @include size(700px, 600px);
+    }
+    
+    .c4 {
+        @include size(700px, 600px);
+    }
+    
+    .c1 {
+        @include size(700px, 600px);
+    }
+    }
+    
+            // Esto pertenece a la pagina 2000
 
-.a1 {
-    height: 800px;
+        .card {
+            height: 2500px;
+        }
+        
+        .card-two {
+        flex-direction: column;
+        height: 1rem;
+        
+        
+        .card-three {
+        
+        
+        
+        & img {
+        height: 350px;
+        width: 300px;
+        border-radius: 0%;
+        align-self: center;
+        }
+        & h2 {
+        font-size: 25px;
+        text-align: center;
+        }
+        
+        & p {
+        font-size: 15px;
+        }
+        
+        
+        }
+        }
+        .square {
+        display:grid;
+        height: 4000px;
+        flex-direction: column;
+        grid-template-columns: repeat(1, 600px);
+        grid-template-rows: repeat(4, 900px);
+        grid-template-areas: 
+        'a1 a1'
+        'a2 a2'
+        'a4 a4' 
+        'a3 a3'; 
+        
 
-}
+        }
 
-.a4 {
-    height: 800px;
-}
-}
+        .square-box {
+            @include size(600px, 600px);
+            text-align: center;
 
+        }
 
-.grid-3 {
-
-    grid-template-columns: repeat(1,290px);
-    grid-template-rows: repeat(4, 800px);
-    grid-template-areas: 
-    'c3 c3'
-    'c2 c2'
-    'c1 c1'
-    'c4 c4'; 
-
-
-
-.box-2 {
-& img {
-    border-radius: 0%;
-}
-    width: 330px;
-    height: 400px;
-    gap: 0px;
-    justify-content: space-around;
-}
-.c3 {
-    height: 800px;
-
-}
-.c2 {
-    height: 800px;
-}
-
-.c4 {
-    height: 500px;
-}
-
-.c1 {
-    height: 600px;
-}
-}
-
-// Esto pertenece a la pagina 2000
-
-.card {
-    height: 4500px;
-}
-
-.card-two {
-flex-direction: column;
-height: 1rem;
-
-
-.card-three {
-
-
-
-& img {
-height: 350px;
-width: 300px;
-border-radius: 0%;
-align-self: center;
-}
-& h2 {
-font-size: 25px;
-text-align: center;
-}
-
-& p {
-font-size: 15px;
-}
+        }
 
 
-}
-}
-.square {
-display:grid;
-flex-direction: column;
-grid-template-columns: repeat(1, 330px);
-grid-template-rows: repeat(2, 650px);
-grid-template-areas: 
-'a1 a1'
-'a2 a2'
-'a4 a4' 
-'a3 a3'; 
-
-& .square-box {
-
-
-
-& h2 {
-padding-top: 15px;
-}
-
-}
-}
-
-
-
-}
 
 
 
