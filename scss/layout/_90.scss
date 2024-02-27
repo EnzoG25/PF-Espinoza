@@ -59,7 +59,7 @@
 
 
 .b1 {
-    background: radial-gradient(circle, grey, $maincolor) ;
+    background-color: black;
     color: black;
     grid-area: a1; 
     box-shadow: $shadow;
@@ -74,7 +74,7 @@
 
 
 .b3 {
-    background: radial-gradient(circle, grey, $maincolor) ;
+    background-color: black ;
     color: black;
     grid-area: a3; 
     box-shadow: $shadow;
@@ -153,7 +153,7 @@
 }
 
 .a2 {
-    background: radial-gradient(circle, grey, $maincolor) ;
+    background: black;
     box-shadow: $shadow;
     color: black;
     grid-area: b2; 
@@ -237,7 +237,7 @@
 }
 
 .c1 {
-    background: radial-gradient(circle, grey, $maincolor) ;
+    background-color: black;
     box-shadow: $shadow;
     color: black;
     flex-direction: row;

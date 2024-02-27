@@ -1,310 +1,118 @@
-@media screen and (max-width: 625px) {
+@media screen and (max-width: 1115px) {
 
-    // Esto pertenece al index
-
-    .pri-card {
+         // Esto pertenece al index
     
-        flex-direction: column;
-        align-items: center;
+        .nav-1 {
+            & h6 {
+                color: #ffebcd;
+            }
+            }
         
-    & .pri-card-2 {
+            .pri-card {
+            
+                flex-direction: column;
+                align-items: center;
+                
+            & .pri-card-2 {
+            
+                flex-direction: column;
+                width: 95%;
+            & img {
+                width: 100px;
+                height: 600px;
+            }
+            }
+            
+            }
+            
+            
+            
+            .principal-1 {
+            
+            & h1 {
+                font-size: 25px;
+                color: #ff0000;
+            }
+        
+            & p {
+                color: blanchedalmond;
+            }
+            
+            & img {
+                height: 360px;
+                width: 360px;
+                object-fit: fill;
+            }
+            }
+            .pri-map {
+                flex-direction: column;
+                gap: 10px;
+                height: 800px;
+                flex-wrap: wrap;
+            .pri-map-1 {
+                flex-direction: column;
+            }
+            }
+            .image {
+            
+                height: 440px;
+            
+            & img {
+                height: 360px;
+                width: 360px;
+                object-fit: fill;
+            }
+            }
+            .float {
+        
+            & label {
+                font-size: 10px;
+                text-align: center;
+            }
+            }
+        
+         // Esto pertenece a pag 60
     
-        flex-direction: column;
-        width: 80%;
-    & img {
-        width:150px;
-        height: 600px;
-    }
-    }
-    
-    }
-    
-    
-    
-    .principal-1 {
-    
-    & h1 {
-        font-size: 30px;
-    }
-    
-    & img {
-        height: 590px;
-        width: 590px;
-        object-fit: fill;
-    }
-    }
-    .pri-map {
-        flex-direction: column;
-        gap: 10px;
-        height: 900px;
-        flex-wrap: wrap;
-    & pri-map-1 {
-        flex-direction: column;
-    }
-    }
-    .image {
-    
-        height: 650px;
-    
-    & img {
-        height: 580px;
-        width: 580px;
-        object-fit: fill;
-    }
-    }
-    
-    // Esto pertenece a pag 60
-
+        
     .conteiner {
-        height: 1600px;
-    }
-    
+        height: 2200px;
+}
+
     .card-conteiner {
         flex-direction: column;
         height: 50%;
-    }
-    
+}
+
     .sub-titulo {
-        height: 1100px;
-    }
-
-
-    // Esto pertenece a pag 80
-
-
-    .hero-card {
-        flex-direction: column;
-    
-    & img {
-    
-    align-self: center;
-    width: 70%;
-    }
-    }
-
-    // Esto pertenece a pag 90
-
-    .grid {
-
-        grid-template-columns: repeat(1,300px);
-        grid-template-rows: repeat(4, 500px);
-        grid-template-areas: 
-        'a4 a4'
-        'a2 a2'
-        'a1 a1'
-        'a3 a3' ; 
-    
-    .box {
-    
-    & h3 {
-        
-        padding-top: 25px;
-        font-size: 20px;
-    }
-    
-    & p {
-        font-size:15px;
-        text-align: justify;
-        padding: $padding;
-    }
-    }
-    }
-    
-    
-    .grid-2 {
-    
-        grid-template-columns: repeat(1,300px);
-        grid-template-rows: repeat(4, 500px);
-        grid-template-areas: 
-        'b4 b4'
-        'b2 b2'
-        'b1 b1'
-        'b3 b3' ; 
-    }
-    
-    
-    .grid-3 {
-    
-        grid-template-columns: repeat(1,500px);
-        grid-template-rows: repeat(4, 600px);
-        grid-template-areas: 
-        'c3 c3'
-        'c2 c2'
-        'c1 c1'
-        'c4 c4'; 
-    
-    
-    
-    .box-2 {
-    & img {
-        border-radius: 0%;
-    }
-    }
-    }
-
-    // Esto pertenece a la pagina 2000
-
-    .card {
-        height: 3000px;
-    }
-
-    .card-two {
-    flex-direction: column;
-    height: 36%;
-
-    
-    .card-three {
-
-    
-
-    & img {
-    height: 250px;
-    width: 300px;
-    border-radius: 0%;
-    align-self: center;
-    }
-    & h2 {
-    font-size: 25px;
-    text-align: center;
-    }
-    
-    
-    }
-}
-.square {
-    display:grid;
-    grid-template-columns: repeat(2, 300px);
-    grid-template-rows: repeat(2, 300px);
-    grid-template-areas: 
-    'a1 a1'
-    'a2 a3'
-    'a2 a3' 
-    'a4 a4'; 
-
-& .square-box {
-
-& h2 {
-padding-top: 15px;
-}
-}
+        height: 1900px;
 }
     
-    }
-
-
-    @media screen and (max-width: 400px) {
-
-        // Esto pertenece al index
-
-        .nav-1 {
-        & h6 {
-            color: #ffebcd;
-        }
-        }
     
-        .pri-card {
-        
-            flex-direction: column;
-            align-items: center;
-            
-        & .pri-card-2 {
-        
-            flex-direction: column;
-            width: 95%;
-        & img {
-            width: 150px;
-            height: 600px;
-        }
-        }
-        
-        }
-        
-        
-        
-        .principal-1 {
-        
-        & h1 {
-            font-size: 25px;
-            color: #ff0000;
-        }
-
-        & p {
-            color: blanchedalmond;
-        }
-        
-        & img {
-            height: 360px;
-            width: 360px;
-            object-fit: fill;
-        }
-        }
-        .pri-map {
-            flex-direction: column;
-            gap: 10px;
-            height: 800px;
-            flex-wrap: wrap;
-        .pri-map-1 {
-            flex-direction: column;
-        }
-        }
-        .image {
-        
-            height: 440px;
-        
-        & img {
-            height: 360px;
-            width: 360px;
-            object-fit: fill;
-        }
-        }
-        .float {
-
-        & label {
-            font-size: 10px;
-            text-align: center;
-        }
-        }
-
-// Esto pertenece a pag 60
-
-        .conteiner {
-            height: 2200px;
-}
-
-        .card-conteiner {
-            flex-direction: column;
-            height: 50%;
-}
-
-        .sub-titulo {
-            height: 1900px;
-}
-
-// Esto pertenece a pag 80
-
+         // Esto pertenece a pag 80
+    
+    
         .title {
-        & h2 {
-            color:#ffebcd;
-        }
-        }
-        .hero-card {
-            flex-direction: column;
-
-        & img {
-            align-self: center;
-            width: 70%;
-        }
-
-        .hero-card-content { 
-            color: #ffebcd;
+            & h2 {
+                color:#ffebcd;
+            }
+            }
+            .hero-card {
+                flex-direction: column;
         
-}
-}
-
-
-        // Esto pertenece a pag 90
-
-        .grid {
+            & img {
+                align-self: center;
+                width: 70%;
+            }
+        
+            .hero-card-content { 
+                color: #ffebcd;
+            
+        }
+        }
+    
+         // Esto pertenece a pag 90
+    
+         .grid {
 
             grid-template-columns: repeat(1,290px);
             grid-template-rows: repeat(4, 900px);
@@ -336,20 +144,20 @@ padding-top: 15px;
         padding: $padding;
     }
     }
-
+    
     .b4 {
         
         height: 890px;
     }
-
+    
     .b2 {
         height: 500px;
     }
-
+    
     .b3 {
         height: 890px;
     }
-
+    
     .b1 {
         height: 600px;
     }
@@ -365,7 +173,7 @@ padding-top: 15px;
         'b2 b2'
         'b1 b1'
         'b3 b3' ; 
-
+    
         .box-1 {
     
             width: 330px;
@@ -374,16 +182,16 @@ padding-top: 15px;
             
             justify-content: space-around;
     }
-
+    
     .a1 {
         height: 800px;
-
+    
     }
-
+    
     .a4 {
         height: 800px;
     }
-}
+    }
     
     
     .grid-3 {
@@ -409,64 +217,363 @@ padding-top: 15px;
     }
     .c3 {
         height: 800px;
-
+    
     }
     .c2 {
         height: 800px;
     }
-
+    
     .c4 {
         height: 500px;
     }
-
+    
     .c1 {
         height: 600px;
     }
     }
+    
+         // Esto pertenece a la pagina 2000
+    
+         .card {
+            height: 4500px;
+        }
+        
+        .card-two {
+        flex-direction: column;
+        height: 1rem;
+        
+        
+        .card-three {
+        
+        
+        
+        & img {
+        height: 350px;
+        width: 300px;
+        border-radius: 0%;
+        align-self: center;
+        }
+        & h2 {
+        font-size: 25px;
+        text-align: center;
+        }
+        
+        & p {
+        font-size: 15px;
+        }
+        
+        
+        }
+        }
+        .square {
+        display:grid;
+        flex-direction: column;
+        grid-template-columns: repeat(1, 330px);
+        grid-template-rows: repeat(2, 650px);
+        grid-template-areas: 
+        'a1 a1'
+        'a2 a2'
+        'a4 a4' 
+        'a3 a3'; 
+        
+        & .square-box {
+        
+        
+        
+        & h2 {
+        padding-top: 15px;
+        }
+        
+        }
+        }
+        
+        
+        
+        }
+        
+        
 
-    // Esto pertenece a la pagina 2000
 
-    .card {
-        height: 4500px;
+
+
+
+
+
+@media screen and (max-width: 400px) {
+
+    // Esto pertenece al index
+
+    .nav-1 {
+    & h6 {
+        color: #ffebcd;
+    }
     }
 
-    .card-two {
-    flex-direction: column;
-    height: 1rem;
-
+    .pri-card {
     
-    .card-three {
-
+        flex-direction: column;
+        align-items: center;
+        
+    & .pri-card-2 {
     
-
+        flex-direction: column;
+        width: 95%;
     & img {
-    height: 350px;
-    width: 300px;
-    border-radius: 0%;
-    align-self: center;
+        width: 100px;
+        height: 600px;
     }
-    & h2 {
-    font-size: 25px;
-    text-align: center;
+    }
+    
+    }
+    
+    
+    
+    .principal-1 {
+    
+    & h1 {
+        font-size: 25px;
+        color: #ff0000;
     }
 
     & p {
-    font-size: 15px;
+        color: blanchedalmond;
     }
     
-    
+    & img {
+        height: 360px;
+        width: 360px;
+        object-fit: fill;
     }
+    }
+    .pri-map {
+        flex-direction: column;
+        gap: 10px;
+        height: 800px;
+        flex-wrap: wrap;
+    .pri-map-1 {
+        flex-direction: column;
+    }
+    }
+    .image {
+    
+        height: 440px;
+    
+    & img {
+        height: 360px;
+        width: 360px;
+        object-fit: fill;
+    }
+    }
+    .float {
+
+    & label {
+        font-size: 10px;
+        text-align: center;
+    }
+    }
+
+// Esto pertenece a pag 60
+
+    .conteiner {
+        height: 2200px;
+}
+
+    .card-conteiner {
+        flex-direction: column;
+        height: 50%;
+}
+
+    .sub-titulo {
+        height: 1900px;
+}
+
+// Esto pertenece a pag 80
+
+    .title {
+    & h2 {
+        color:#ffebcd;
+    }
+    }
+    .hero-card {
+        flex-direction: column;
+
+    & img {
+        align-self: center;
+        width: 70%;
+    }
+
+    .hero-card-content { 
+        color: #ffebcd;
+    
+}
+}
+
+
+    // Esto pertenece a pag 90
+
+    .grid {
+
+        grid-template-columns: repeat(1,290px);
+        grid-template-rows: repeat(4, 900px);
+        grid-template-areas: 
+        'a4 a4'
+        'a2 a2'
+        'a1 a1'
+        'a3 a3' ; 
+
+.box {
+
+    width: 330px;
+    height: 400px;
+    align-content: space-evenly;
+    justify-content: center;
+    
+    
+
+
+& h3 {
+    
+    padding-top: 25px;
+    font-size: 20px;
+}
+
+& p {
+    font-size:15px;
+    text-align: justify;
+    padding: $padding;
+}
+}
+
+.b4 {
+    
+    height: 890px;
+}
+
+.b2 {
+    height: 500px;
+}
+
+.b3 {
+    height: 890px;
+}
+
+.b1 {
+    height: 600px;
+}
+}
+
+
+.grid-2 {
+
+    grid-template-columns: repeat(1,290px);
+    grid-template-rows: repeat(4, 800px);
+    grid-template-areas: 
+    'b4 b4'
+    'b2 b2'
+    'b1 b1'
+    'b3 b3' ; 
+
+    .box-1 {
+
+        width: 330px;
+        height: 400px;
+        gap: 0px;
+        
+        justify-content: space-around;
+}
+
+.a1 {
+    height: 800px;
+
+}
+
+.a4 {
+    height: 800px;
+}
+}
+
+
+.grid-3 {
+
+    grid-template-columns: repeat(1,290px);
+    grid-template-rows: repeat(4, 800px);
+    grid-template-areas: 
+    'c3 c3'
+    'c2 c2'
+    'c1 c1'
+    'c4 c4'; 
+
+
+
+.box-2 {
+& img {
+    border-radius: 0%;
+}
+    width: 330px;
+    height: 400px;
+    gap: 0px;
+    justify-content: space-around;
+}
+.c3 {
+    height: 800px;
+
+}
+.c2 {
+    height: 800px;
+}
+
+.c4 {
+    height: 500px;
+}
+
+.c1 {
+    height: 600px;
+}
+}
+
+// Esto pertenece a la pagina 2000
+
+.card {
+    height: 4500px;
+}
+
+.card-two {
+flex-direction: column;
+height: 1rem;
+
+
+.card-three {
+
+
+
+& img {
+height: 350px;
+width: 300px;
+border-radius: 0%;
+align-self: center;
+}
+& h2 {
+font-size: 25px;
+text-align: center;
+}
+
+& p {
+font-size: 15px;
+}
+
+
+}
 }
 .square {
-    display:grid;
-    flex-direction: column;
-    grid-template-columns: repeat(1, 330px);
-    grid-template-rows: repeat(2, 650px);
-    grid-template-areas: 
-    'a1 a1'
-    'a2 a2'
-    'a4 a4' 
-    'a3 a3'; 
+display:grid;
+flex-direction: column;
+grid-template-columns: repeat(1, 330px);
+grid-template-rows: repeat(2, 650px);
+grid-template-areas: 
+'a1 a1'
+'a2 a2'
+'a4 a4' 
+'a3 a3'; 
 
 & .square-box {
 
@@ -482,4 +589,13 @@ padding-top: 15px;
 
 
 }
-    
+
+
+
+
+
+
+
+
+
+
